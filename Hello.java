@@ -627,4 +627,53 @@ public class Hello {
         tipSize = new_tip_size;
     }
 }
+
+Interface
+
+interface chessPlayers{
+    void moves();
 }
+
+class Queen implements chessPlayers{
+    public void moves(){
+        System.out.println("up,down,left,right and diagonally(in all 4 dirns)");
+    }
+}
+
+class King implements chessPlayers{
+    public void moves(){
+        System.out.println("Up, down, left, right by one unit only");
+    }
+}
+
+class Rook implements chessPlayers {
+    public void moves() {
+        System.out.println("Up, down, left and right");
+    }    
+}
+
+class Pawn implements chessPlayers  {
+    public void moves(){
+        System.out.println("Only forward by one and initially two");
+    }
+}
+
+Interface implementing multiple inheritence 
+interface Herbivorous {
+    void eatsPlants();
+}
+
+interface Carnivorous {
+    void eatsMeat();
+}
+
+class Omnivore implements Herbivorous, Carnivorous {
+    public void eatsPlants() {
+        System.out.println("Eats plants");
+    }
+    public void eatsMeat() {
+        System.out.println("Eats meat");
+    }
+}
+}
+
