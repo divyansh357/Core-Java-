@@ -605,5 +605,26 @@ public class Hello {
         // }
         // System.out.println("i after loop is:"+i);// i cannot be used here as scope of i ends after for loop.
         
+
+        // Class and Objects 
+        // Pen p1 = new Pen();
+        // p1.setColor("Blue");
+        // System.out.println(p1.color);
+        // p1.setTip(5);
+        // System.out.println(p1.tipSize);
+        // p1.color = "Red";
+        // System.out.println(p1.color);
+
+        
     }
+    class Pen{
+    String color;
+    int tipSize;
+    void setColor(String newColor){
+        color = newColor;
+    }
+    void setTip(int new_tip_size){
+        tipSize = new_tip_size;
+    }
+}
 }
