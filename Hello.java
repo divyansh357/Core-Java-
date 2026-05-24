@@ -677,3 +677,25 @@ class Omnivore implements Herbivorous, Carnivorous {
 }
 }
 
+static Keyword
+
+class Student {
+
+    // same shared by all objects 
+    static int percentage(int maths, int phys, int chem){
+        return (maths+phys+chem)/3;
+    }
+    int rollNo;
+    String name;
+
+    static String schoolName;
+
+    void setRoll(int rollNo){
+        this.rollNo = rollNo;
+    }
+    int getRoll(){
+        return this.rollNo;
+    }
+    
+}
+
