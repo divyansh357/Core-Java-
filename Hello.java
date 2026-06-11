@@ -606,112 +606,11 @@ public class Hello {
         // System.out.println("i after loop is:"+i);// i cannot be used here as scope of i ends after for loop.
         
 
-        // Class and Objects 
-        // Pen p1 = new Pen();
-        // p1.setColor("Blue");
-        // System.out.println(p1.color);
-        // p1.setTip(5);
-        // System.out.println(p1.tipSize);
-        // p1.color = "Red";
-        // System.out.println(p1.color);
+        
 
         
     }
-    class Pen{
-    String color;
-    int tipSize;
-    void setColor(String newColor){
-        color = newColor;
-    }
-    void setTip(int new_tip_size){
-        tipSize = new_tip_size;
-    }
-}
-
-Interface
-
-interface chessPlayers{
-    void moves();
-}
-
-class Queen implements chessPlayers{
-    public void moves(){
-        System.out.println("up,down,left,right and diagonally(in all 4 dirns)");
-    }
-}
-
-class King implements chessPlayers{
-    public void moves(){
-        System.out.println("Up, down, left, right by one unit only");
-    }
-}
-
-class Rook implements chessPlayers {
-    public void moves() {
-        System.out.println("Up, down, left and right");
-    }    
-}
-
-class Pawn implements chessPlayers  {
-    public void moves(){
-        System.out.println("Only forward by one and initially two");
-    }
-}
-
-Interface implementing multiple inheritence 
-interface Herbivorous {
-    void eatsPlants();
-}
-
-interface Carnivorous {
-    void eatsMeat();
-}
-
-class Omnivore implements Herbivorous, Carnivorous {
-    public void eatsPlants() {
-        System.out.println("Eats plants");
-    }
-    public void eatsMeat() {
-        System.out.println("Eats meat");
-    }
-}
-}
-
-static Keyword
-
-class Student {
-
-    // same shared by all objects 
-    static int percentage(int maths, int phys, int chem){
-        return (maths+phys+chem)/3;
-    }
-    int rollNo;
-    String name;
-
-    static String schoolName;
-
-    void setRoll(int rollNo){
-        this.rollNo = rollNo;
-    }
-    int getRoll(){
-        return this.rollNo;
-    }
     
-}
-
-super Keyword
-class Animal {
-    String color;
-    Animal(){
-        System.out.println("Animal constructor is called");
-    }
-}
-
-class Horse extends Animal  {
-    Horse(){
-        super.color = "brown";
-        System.out.println("Horse constructor is called");
-    }
 }
 
 
