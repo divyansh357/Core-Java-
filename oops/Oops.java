@@ -1,6 +1,6 @@
 package oops;
 class Calculator{
-    int num; // instance variable
+    int num = 5; // instance variable
     public int add(int n1, int n2){
         return n1 + n2; // local variable
     }
@@ -24,7 +24,7 @@ class Computer{
 }
 public class Oops {
     public static void main(String[] args) {
-        int num1 = 4;
+        int num1 = 4; // local variable
         int num2 = 5;
         int num3 = 7;
         Calculator calc = new Calculator();
