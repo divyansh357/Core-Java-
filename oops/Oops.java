@@ -22,18 +22,47 @@ class Computer{
         return "Nothing";
     }
 }
+
+// Encapsulation
+class Human{
+    private int age;
+    private String name;
+    public void setAge(int age){ // Setter
+        this.age = age; // this keyword refers to object that called setAge() 
+    }
+    public int getAge(){    //Getter
+        return age;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+    public String getName(){
+        return name;
+    }
+}
 public class Oops {
     public static void main(String[] args) {
-        int num1 = 4; // local variable
-        int num2 = 5;
-        int num3 = 7;
-        Calculator calc = new Calculator();
-        int result = calc.add(num1, num2,num3);
-        System.out.println(result);
+        // int num1 = 4; // local variable
+        // int num2 = 5;
+        // int num3 = 7;
+        // Calculator calc = new Calculator();
+        // int result = calc.add(num1, num2,num3);
+        // System.out.println(result);
         // Computer com = new Computer();
         // com.listenMusic();
         // String str = com.getMeAPen(2);   
         // System.out.println(str);
+
+        // Encpasulation, Getter & Setters
+        Human h = new Human();
+        h.setAge(21);
+        h.setName("Divyansh Gupta");
+        System.out.println(h.getAge());
+        System.out.println(h.getName());
+
+        //
+
+        
 
     }
 
