@@ -27,6 +27,17 @@ class Computer{
 class Human{
     private int age;
     private String name;
+    public Human(){ // default Constructor 
+        age = 15;
+        name = "Chhavi";
+    }
+    public Human(int age , String name){ // Parameterized Constructor
+        this.name = name ;
+        this.age = age;
+    }
+    public Human(String name){
+        this.name = name ;
+    }
     public void setAge(int age){ // Setter
         this.age = age; // this keyword refers to object that called setAge() 
     }
@@ -54,13 +65,19 @@ public class Oops {
         // System.out.println(str);
 
         // Encpasulation, Getter & Setters
-        Human h = new Human();
-        h.setAge(21);
-        h.setName("Divyansh Gupta");
-        System.out.println(h.getAge());
-        System.out.println(h.getName());
+        //Human h = new Human();
+        // h.setAge(21);
+        // h.setName("Divyansh Gupta");
+        // System.out.println(h.getAge());
+        // System.out.println(h.getName());
 
-        //
+        // Constructor
+        //Human h1= new Human(10, "Divyansh");
+        Human h2 = new Human("Asmi");
+        System.out.println(h2.getAge());
+        System.out.println(h2.getName());
+
+
 
         
 
