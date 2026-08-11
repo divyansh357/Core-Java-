@@ -51,6 +51,20 @@ class Human{
         return name;
     }
 }
+// static keyword
+class Mobile{
+    String company;
+    int price;
+    static String name;
+    public Mobile(String company, int price){
+        this.company = company;
+        this.price = price;
+    } 
+    public void show(){
+        System.out.println(name + " : " + company + " : " + price);
+    } 
+
+}
 public class Oops {
     public static void main(String[] args) {
         // int num1 = 4; // local variable
@@ -73,9 +87,16 @@ public class Oops {
 
         // Constructor
         //Human h1= new Human(10, "Divyansh");
-        Human h2 = new Human("Asmi");
-        System.out.println(h2.getAge());
-        System.out.println(h2.getName());
+        // Human h2 = new Human("Asmi");
+        // System.out.println(h2.getAge());
+        // System.out.println(h2.getName());
+
+        // static keyword
+        Mobile  c1 = new Mobile("Hyundai",100000);
+        Mobile.name = "Four-Wheel";
+        c1.show();
+        Mobile
+
 
 
 
