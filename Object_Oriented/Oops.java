@@ -135,7 +135,7 @@ public class Oops {
         // Anonymous Objects 
         // new A().show();
 
-        // Inheritence 
+        // Inheritence - Single lvl and multi-lvl
         VeryAdvCalc obj = new VeryAdvCalc();
         int r1 = obj.add(5, 2);
         int r2 = obj.sub(5, 2);
@@ -144,7 +144,8 @@ public class Oops {
         double r5 = obj.power(3,2);
         System.out.println(r1 + " " + r2 + " "+ r3 + " " + r4 + " " + r5);
         
-
+        // java doesnt support multiple inheritence because of ambuguity they just the just problem rather than solving it - java things 
+        
 
 
 
