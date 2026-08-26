@@ -51,22 +51,41 @@ class Human{
         return name;
     }
 }
-// static keyword
+// static keyword and static block
 class Mobile{
     String company;
     int price;
     static String name;
+    static{
+        name = "Ship";
+        System.out.println("In static block");
+        System.out.println(name);
+    }
     public Mobile(String company, int price){
         this.company = company;
         this.price = price;
+        System.out.println("In constrcutor");
     } 
     public void show(){
         System.out.println(name + " : " + company + " : " + price);
     } 
+    static public void show1(Mobile obj){ // Indirect access of non-static variables through object refernce
+        System.out.println(name + " : "+ obj.company + " : "+obj.price);
+    }
 
 }
+//Anonymous Objects
+class A{
+    A(){
+        System.out.println("Object Created");
+    }
+    public void show(){
+        System.out.println("in A's show");
+    }
+ }
+
 public class Oops {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException {
         // int num1 = 4; // local variable
         // int num2 = 5;
         // int num3 = 7;
@@ -92,10 +111,33 @@ public class Oops {
         // System.out.println(h2.getName());
 
         // static keyword
-        Mobile  c1 = new Mobile("Hyundai",100000);
-        Mobile.name = "Four-Wheel";
-        c1.show();
-        Mobile
+        // Mobile  c1 = new Mobile("Hyundai",100000);
+        // Mobile.name = "Four-Wheel";
+        // c1.show();
+        // Mobile c2 = new Mobile("Honda",90000);
+        // Mobile.name = "Two-Wheel";
+        // c2.show();
+        // c1.show(); // Static varible name also changed for c1 when changed later in code as it is shared by all objects 
+
+        // // static method 
+        // Mobile.show1(c1);
+
+        // static block 
+        // Mobile c3 = new Mobile("Tata", 100000);
+        // c3.show();
+
+        // Mobile c4 = new Mobile("Suzuki", 50000);
+        // c4.show();
+
+        //Loading some class explicitly without object craetion  - this throws an exception
+        //Class.forName("oops.Mobile");
+
+        // Anonymous Objects 
+        // new A().show();
+        
+
+
+
 
 
 
