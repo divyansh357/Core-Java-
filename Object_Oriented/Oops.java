@@ -101,7 +101,7 @@ class A{
         System.out.println("in C");
     }
     public C(int a){
-        super();
+        this(); // executes the constructor of same Class - undertaker
         System.out.println("in int C");
     }
  }
