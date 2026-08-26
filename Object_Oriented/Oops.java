@@ -1,4 +1,4 @@
-package oops;
+package Object_Oriented;
 class Calculator{
     int num = 5; // instance variable
     public int add(int n1, int n2){
@@ -134,6 +134,15 @@ public class Oops {
 
         // Anonymous Objects 
         // new A().show();
+
+        // Inheritence 
+        VeryAdvCalc obj = new VeryAdvCalc();
+        int r1 = obj.add(5, 2);
+        int r2 = obj.sub(5, 2);
+        int r3 = obj.multi(5, 2);
+        int r4 = obj.div(5, 2);
+        double r5 = obj.power(3,2);
+        System.out.println(r1 + " " + r2 + " "+ r3 + " " + r4 + " " + r5);
         
 
 
