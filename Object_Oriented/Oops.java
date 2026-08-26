@@ -84,6 +84,27 @@ class A{
     }
  }
 
+ // this and super();
+ class B extends Object{ // it do this implicitly
+    public B(){
+        super(); // calling the constructor of Object Class
+        System.out.println("in B");
+    } 
+    public B(int a){
+        super();
+        System.out.println("in int B");
+    }
+ }
+ class C extends B{
+    public C(){
+        super(5);
+        System.out.println("in C");
+    }
+    public C(int a){
+        super();
+        System.out.println("in int C");
+    }
+ }
 public class Oops {
     public static void main(String[] args) throws ClassNotFoundException {
         // int num1 = 4; // local variable
@@ -136,16 +157,19 @@ public class Oops {
         // new A().show();
 
         // Inheritence - Single lvl and multi-lvl
-        VeryAdvCalc obj = new VeryAdvCalc();
-        int r1 = obj.add(5, 2);
-        int r2 = obj.sub(5, 2);
-        int r3 = obj.multi(5, 2);
-        int r4 = obj.div(5, 2);
-        double r5 = obj.power(3,2);
-        System.out.println(r1 + " " + r2 + " "+ r3 + " " + r4 + " " + r5);
+        // VeryAdvCalc obj = new VeryAdvCalc();
+        // int r1 = obj.add(5, 2);
+        // int r2 = obj.sub(5, 2);
+        // int r3 = obj.multi(5, 2);
+        // int r4 = obj.div(5, 2);
+        // double r5 = obj.power(3,2);
+        // System.out.println(r1 + " " + r2 + " "+ r3 + " " + r4 + " " + r5);
         
         // java doesnt support multiple inheritence because of ambuguity they just the just problem rather than solving it - java things 
-        
+
+        // this and super();
+        //super(); is present in the top of every constructor to implicitly call the super class default constructor , if want to make some changes we can explicity mention it , for example calling a parameterized constructor 
+        C obj = new C(5);
 
 
 
