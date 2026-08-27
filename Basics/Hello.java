@@ -1,6 +1,8 @@
+package Basics;
 public class Hello {
-
-     public static void printMultiplication(int number)
+    int marks = 6;
+    protected int p = 89;
+     public void printMultiplication(int number)
     {
         for(int i=1;i<=10;i++)
         {

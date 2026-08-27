@@ -1,4 +1,5 @@
 package Object_Oriented;
+import Basics.Hello; // importing Hello class from basics package 
 class Calculator{
     int num = 5; // instance variable
     public int add(int n1, int n2){
@@ -107,6 +108,7 @@ class A{
  }
 public class Oops {
     public static void main(String[] args) throws ClassNotFoundException {
+        // Method Oveloading and local and instance variables
         // int num1 = 4; // local variable
         // int num2 = 5;
         // int num3 = 7;
@@ -169,16 +171,51 @@ public class Oops {
 
         // this and super();
         //super(); is present in the top of every constructor to implicitly call the super class default constructor , if want to make some changes we can explicity mention it , for example calling a parameterized constructor 
-        C obj = new C(5);
+        // C obj = new C(5);
+
+        // Method Overriding - child method overriding parent method
+        // Using Cal and  AdvCalc
+        // AdvCalc obj = new AdvCalc();
+        // int a = obj.add(5, 6);
+        // System.out.println(a);
+
+        // Packages 
+        // Using a method from Hello class from Basics pakage by importing it 
+        // Hello obj = new Hello();
+        // obj.printMultiplication(10);
+
+        // Access Modifiers
+        // Hello obj = new Hello();
+        //System.out.println(obj.marks); // default cannot be accessed in diff package 
+
+        // Calc obj1  = new Calc();;
+        // System.out.println(obj1.add(5, 6));
+        //System.out.println(obj1.num); // private cannot be  accessible from a class in same package 
+        //System.out.println(obj1.a); // default can be accessed in the same pakage anywhere 
+
+        //Protected
+
+        // M obj  = new M();
+        // System.out.println(obj.q); // same pkg non sub-class - protected accessible
+        G obj = new G();
+        obj.abc(); // diff package subclass 
 
 
-
-
-
-
-        
 
     }
 
 }
 
+class M{
+
+    protected int q = 7;
+    // public void show(){
+    //     System.out.println(p); // diff pakage non-subclass not accessible 
+    // }
+}
+
+class G extends Hello{
+    public void abc(){
+        System.out.println(p);
+    }
+}

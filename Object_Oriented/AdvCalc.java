@@ -7,5 +7,8 @@ public class AdvCalc extends Calc{
     public int div(int n1 , int n2){
         return n1 / n2;
     }
+    public int add(int n1 , int n2){ // Method Overriding
+        return n1 + n2 + 1;
+    }
 }
 
