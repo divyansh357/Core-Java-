@@ -106,6 +106,47 @@ class A{
         System.out.println("in int C");
     }
  }
+
+ //Protected Access Modifier
+ class M{
+
+    protected int q = 7;
+    // public void show(){
+    //     System.out.println(p); // diff pakage non-subclass not accessible 
+    // }
+}
+
+class G extends Hello{
+    public void abc(){
+        System.out.println(p);
+    }
+}
+
+//Dynamic Method Dispatch
+class Z {
+    public void show(){
+        System.out.println("in Z show");
+    }
+    public void add(){
+        System.out.println("in add of Z class");
+    }
+}
+class X extends Z{
+    public void show(){
+        System.out.println("in X show");
+    }
+    public void sub(){
+        System.out.println("in sub of X class");
+    }
+}
+
+class V extends Z{
+    public void show(){
+        System.out.println("in V show");
+    }
+}
+
+
 public class Oops {
     public static void main(String[] args) throws ClassNotFoundException {
         // Method Oveloading and local and instance variables
@@ -197,25 +238,26 @@ public class Oops {
 
         // M obj  = new M();
         // System.out.println(obj.q); // same pkg non sub-class - protected accessible
-        G obj = new G();
-        obj.abc(); // diff package subclass 
+        // G obj = new G();
+        // obj.abc(); // diff package subclass 
 
+        //Dynamic method Dispatch - whatever the type of reference it will call method according to the object of the class it is 
+        //- Inheritence is must to a reference of parent class to point to a child object 
+        //reference of Z
+        // Z obj = new Z(); // Pointing to Z 
+        // obj.show();
+
+        // obj = new X(); // pointing to X 
+        // obj.show();
+        // //obj.sub(); // The method sub() is undefined for the type Z
+
+        // obj = new V(); // pointing to V
+        // obj.show();
 
 
     }
 
 }
 
-class M{
 
-    protected int q = 7;
-    // public void show(){
-    //     System.out.println(p); // diff pakage non-subclass not accessible 
-    // }
-}
 
-class G extends Hello{
-    public void abc(){
-        System.out.println(p);
-    }
-}
