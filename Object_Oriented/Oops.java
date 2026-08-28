@@ -201,6 +201,17 @@ class Laptop extends Object {// every class extends Object class implicitly
     
 }
 
+//UpCasting
+class K {
+    public void show1(){
+        System.out.println("in K show");
+    }
+}
+class J extends K {
+    public void show2(){
+        System.out.println("in J show");
+    }
+}
 
 public class Oops {
     public static void main(String[] args) throws ClassNotFoundException {
@@ -321,16 +332,27 @@ public class Oops {
         // obj.add(1,2);
 
         // Object Class
-        Laptop obj1 = new Laptop();
-        obj1.model ="Lenovo Yoga";
-        obj1.price = 1000;
+        // Laptop obj1 = new Laptop();
+        // obj1.model ="Lenovo Yoga";
+        // obj1.price = 1000;
 
-        Laptop obj2 = new Laptop();
-        obj2.model ="Lenovo Yoga";
-        obj2.price = 1000;
-        System.out.println(obj1); //Whenever we print the object, obj.toString() is called implicitly
-        // equals()
-        System.out.println(obj1.equals(obj2)); // overriden equals is being called 
+        // Laptop obj2 = new Laptop();
+        // obj2.model ="Lenovo Yoga";
+        // obj2.price = 1000;
+        // System.out.println(obj1); //Whenever we print the object, obj.toString() is called implicitly
+        // // equals()
+        // System.out.println(obj1.equals(obj2)); // overriden equals is being called 
+
+        //UpCasting 
+        K obj = (K) new J(); // creating an object of child class and referencing it with an variable of parent class type - so it can only call parents methods and variables 
+        obj.show1();
+        //obj.show2(); // The method show2() is undefined for the type K
+
+        // DownCasting
+        J obj1 =  (J) obj; 
+        obj1.show2();
+
+        
 
 
 
