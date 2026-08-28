@@ -146,6 +146,23 @@ class V extends Z{
     }
 }
 
+// final class  and methods 
+
+// final class Calcu {
+//     final public void show(){
+//         System.out.println("By Divyansh");
+//     }
+//     public void add(int a , int b){
+//         System.out.println(a+b);
+//     }
+// }
+
+// class AdvCalcu extends Calcu{  // The type AdvCalcu cannot subclass the final class Calcu
+// public void show(){ // Cannot override the final method from Calcu
+//     System.out.println("By Harshit");
+// }
+// }
+
 
 public class Oops {
     public static void main(String[] args) throws ClassNotFoundException {
@@ -241,7 +258,9 @@ public class Oops {
         // G obj = new G();
         // obj.abc(); // diff package subclass 
 
+
         //Dynamic method Dispatch - whatever the type of reference it will call method according to the object of the class it is 
+        
         //- Inheritence is must to a reference of parent class to point to a child object 
         //reference of Z
         // Z obj = new Z(); // Pointing to Z 
@@ -253,6 +272,17 @@ public class Oops {
 
         // obj = new V(); // pointing to V
         // obj.show();
+
+        //final variable 
+        // final int num = 8;
+        // //num = 9; cannot reassign
+        // System.out.println(num);
+
+        // Final class and methods
+        // AdvCalc obj = new AdvCalc();
+        // obj.add(1,2);
+
+
 
 
     }
