@@ -344,13 +344,26 @@ public class Oops {
         // System.out.println(obj1.equals(obj2)); // overriden equals is being called 
 
         //UpCasting 
-        K obj = (K) new J(); // creating an object of child class and referencing it with an variable of parent class type - so it can only call parents methods and variables 
-        obj.show1();
+        // K obj = (K) new J(); // creating an object of child class and referencing it with an variable of parent class type - so it can only call parents methods and variables 
+        // obj.show1();
         //obj.show2(); // The method show2() is undefined for the type K
 
         // DownCasting
-        J obj1 =  (J) obj; 
-        obj1.show2();
+        // J obj1 =  (J) obj; 
+        // obj1.show2();
+
+        // Wrapper Classes
+        int num = 7;
+        
+        Integer num1 = num; // AutoBoxing- primitive type converted to Wrapper object implicitly and object is created implicitly
+        
+
+        int num2 = num1; // Auto-Unboxing - Wrapper object converted to primitive type implicitly intValue() is called 
+        System.out.println(num2);
+
+        String str = "12";
+        int val = Integer.parseInt(str);
+        System.out.println(val*2);
 
         
 
