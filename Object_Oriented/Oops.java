@@ -353,26 +353,37 @@ public class Oops {
         // obj1.show2();
 
         // Wrapper Classes
-        int num = 7;
+        // int num = 7;
         
-        Integer num1 = num; // AutoBoxing- primitive type converted to Wrapper object implicitly and object is created implicitly
-        
-
-        int num2 = num1; // Auto-Unboxing - Wrapper object converted to primitive type implicitly intValue() is called 
-        System.out.println(num2);
-
-        String str = "12";
-        int val = Integer.parseInt(str);
-        System.out.println(val*2);
-
+        // Integer num1 = num; // AutoBoxing- primitive type converted to Wrapper object implicitly and object is created implicitly
         
 
+        // int num2 = num1; // Auto-Unboxing - Wrapper object converted to primitive type implicitly intValue() is called 
+        // System.out.println(num2);
+
+        // String str = "12";
+        // int val = Integer.parseInt(str);
+        // System.out.println(val*2);
+
+        // Overloading main method - but first String[] args is used at launch 
+        main("Divs");
+        main(10);
+
+        
 
 
 
 
 
 
+
+    }
+    //Overloading main method 
+    public static void main(int x){
+        System.out.println(x);
+    }
+    public static void main(String x) {
+        System.out.println(x);
     }
 
 }

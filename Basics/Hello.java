@@ -1,4 +1,5 @@
 package Basics;
+import java.util.*;
 public class Hello {
     int marks = 6;
     protected int p = 89;
@@ -264,6 +265,16 @@ public class Hello {
         //               break;
         //     default : System.out.println("We wake up");
         // }
+
+        // After Java 14 , break is no more a burden 
+        // Used as a statement (no return value)
+// switch (day) {
+//     case MONDAY, FRIDAY, SUNDAY -> System.out.println(6);
+//     case TUESDAY                -> System.out.println(7);
+//     case THURSDAY, SATURDAY     -> System.out.println(8);
+//     case WEDNESDAY              -> System.out.println(9);
+//     default                     -> System.out.println(0);
+// }
 
         // Calculator
         // Scanner s = new Scanner(System.in);
@@ -610,9 +621,9 @@ public class Hello {
 
         
 
-        
-    }
-    
+     }
 }
+    
+
 
 
