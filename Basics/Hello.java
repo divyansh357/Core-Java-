@@ -10,7 +10,7 @@ public class Hello {
             System.out.println(number+"*"+i+"="+number*i);
         }
     }
-    public static void main(String a[]){
+    public static void main(String args[]){
         //System.out.println("Hello World");
 
         // Variables
@@ -77,8 +77,8 @@ public class Hello {
 
         // char a = 'a';
         // char b = 'b';
-        // //char c = a-b ; // possible lossy conversion from int to char
-        // System.out.println((int)b);
+        // char c = a-b ; // possible lossy conversion from int to char
+        //System.out.println((int)b);
         // System.out.println((int)a);
         // System.out.println(b-a);
         // System.out.println(b+a);
@@ -268,13 +268,14 @@ public class Hello {
 
         // After Java 14 , break is no more a burden 
         // Used as a statement (no return value)
-// switch (day) {
-//     case MONDAY, FRIDAY, SUNDAY -> System.out.println(6);
-//     case TUESDAY                -> System.out.println(7);
-//     case THURSDAY, SATURDAY     -> System.out.println(8);
-//     case WEDNESDAY              -> System.out.println(9);
-//     default                     -> System.out.println(0);
-// }
+        // Arrow switch label
+        // switch (day) {
+        //     case MONDAY, FRIDAY, SUNDAY -> System.out.println(6);
+        //     case TUESDAY                -> System.out.println(7);
+        //     case THURSDAY, SATURDAY     -> System.out.println(8);
+        //     case WEDNESDAY              -> System.out.println(9);
+        //     default                     -> System.out.println(0);
+       // }
 
         // Calculator
         // Scanner s = new Scanner(System.in);

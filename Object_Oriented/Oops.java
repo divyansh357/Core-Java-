@@ -216,16 +216,16 @@ class J extends K {
 public class Oops {
     public static void main(String[] args) throws ClassNotFoundException {
         // Method Oveloading and local and instance variables
-        // int num1 = 4; // local variable
-        // int num2 = 5;
-        // int num3 = 7;
-        // Calculator calc = new Calculator();
-        // int result = calc.add(num1, num2,num3);
-        // System.out.println(result);
-        // Computer com = new Computer();
-        // com.listenMusic();
-        // String str = com.getMeAPen(2);   
-        // System.out.println(str);
+        int num1 = 4; // local variable
+        int num2 = 5;
+        int num3 = 7;
+        Calculator calc = new Calculator();
+        int result = calc.add(num1, num2,num3);
+        System.out.println(result);
+        Computer com = new Computer();
+        com.listenMusic();
+        String str = com.getMeAPen(2);   
+        System.out.println(str);
 
         // Encpasulation, Getter & Setters
         //Human h = new Human();
